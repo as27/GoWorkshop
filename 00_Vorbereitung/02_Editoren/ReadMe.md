@@ -39,3 +39,4 @@ Die Tools werden dann geladen und installiert. Komplette Anleitung findet sich i
 ## Andere Editoren
 
 * [JetBrains Gogland](https://www.jetbrains.com/go/)
+* [vim-go Erweiterung für vim](https://github.com/fatih/vim-go)

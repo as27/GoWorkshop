@@ -1,0 +1,17 @@
+Pointer und Variablen
+01 Grundlagen
+
+Andreas Schröpfer
+@lyckade
+
+* Variablen
+
+- jede Variable hat einen Typ
+- einen Wert
+- eine Adresse im Arbeitsspeicher
+
+Der Typ legt fest, wie eine Variable im Arbeitsspeicher abgebildet wird.
+
+* Pointer
+
+Eine Variable kann auch ein Pointer sein. Ein Pointer ist eine Adresse im Arbeitsspeicher.

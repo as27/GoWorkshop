@@ -1,0 +1,33 @@
+func
+01 Grundlagen
+
+Andreas Schröpfer
+@lyckade
+
+* Funktionen
+
+* Deklaration
+
+- Deklaration mit dem Wort *func*
+- Alle Inputwerte müssen mit dem Typ definiert sein
+- Alle Outputwerte müssen mit dem Type definiert sein
+- Mehrere Outputwerte möglich
+
+
+* Deklaration
+
+.play slide/add/main.go
+
+* Deklaration mit eigenen Typen
+
+.play slide/temp/main.go
+
+* Funktionen mit mehreren Outputs
+
+.play slide/div/main.go
+
+* Funktionen mit mehreren Outputs
+
+- der zweite Output beinhaltet meist Fehler oder Erfolgsmeldungen
+- kann aber auch jeder andere beliebige Wert sein
+- mit _ können Werte ausgelassen werden

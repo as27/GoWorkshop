@@ -1,0 +1,14 @@
+Methoden
+01 Grundlagen
+
+Andreas Schröpfer
+@lyckade
+
+* Methoden
+
+- Methoden sind Funktionen zu einem bestimmten Typ
+- es können bliebig viele Methoden hinzugefügt werden
+
+* Methoden String()
+
+.play slide/celsius/main.go

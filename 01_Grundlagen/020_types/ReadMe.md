@@ -37,7 +37,7 @@ Für die erste Verwendung im Workshop beschränken wir uns auf die Typen:
 
 ## Deklaration
 
-Die Deklaration von Typen in Go sieht wie folgt aus:
+Die Deklaration von Basistypen in Go sieht wie folgt aus:
 
 
 ```Go
@@ -51,12 +51,61 @@ var anotherInteger int = 4
 
 [Beispiele aus der Go Tour](https://go-tour-de.appspot.com/basics/8)
 
-Es gibt auch die Möglichkeit einer kurzen Variablendeklaration. Hierbei ist die Lesbarkeit des Codes ein wenig schlechter.
+Es gibt auch die Möglichkeit einer kurzen Variablendeklaration. Allgemein wird diese Deklaration in den meisten Projekten bevorzugt verwendet. Die direkte Lesbarkeit nimmt dadurch ein wenig ab. Bei der Verwendung eines Editors wie VS Code ist dies nicht so schlimm, da dieser einem auch den Typen der Variablen anzeigt.
 
 ```Go
 myInteger := 4
 ```
 
+Jeder Typ besitzt auch eine Funktion, welche diesen Wert zurück gibt. Hierfür wird dem Typen `()` angehängt. Diese Funktion wandelt, solange es möglich ist, den Wert in den jeweiligen Typen um.
+
+```Go
+myInteger := int(4)
+myString := string("mein Text")
+```
+
 ## Eigene Typen
 
-Ein weiterer wichtiger Bestandteil ist die Definition von eigenen Typen.
+Ein weiterer wichtiger Bestandteil ist die Definition von eigenen Typen. Hierdurch können die Basistypen erweitert werden. In folgendem Beispiel werden Typen für die Temparatur definiert. 
+
+```Go
+type Celcius int
+type Farenheit int
+
+func main() {
+	tc := Celcius(24)
+	tf := Farenheit(72)
+	fmt.Println("tc: ", tc)
+	fmt.Println("tf: ", tf)
+}
+```
+https://play.golang.org/p/hyKcUrhym7
+
+Obwohl beide Typen jeweils ein `int` sind, ist es in Go nicht möglich diese beiden Typen zu mischen:
+
+```Go
+type Celcius int
+type Farenheit int
+
+func main() {
+	tc := Celcius(24)
+	tf := Farenheit(72)
+	t := tc + tf
+}
+```
+https://play.golang.org/p/D_-RxDM2HI
+
+Die Fehlermeldung hier:
+```
+invalid operation: tc + tf (mismatched types Celcius and Farenheit)
+```
+
+In JavaScript wäre hier eine Addition ohne Fehler möglich gewesen. D.h. bei dem Design der Programme müssen fachliche Typen identifiziert werden, welche dann auch im Code definiert werden. Bei einer guten Aufteilung werden dann Fehler bereits frühzeitig erkannt.
+
+## Zusammenfassung
+
+Go ist eine Sprache mit strenger Typisierung. Die einzelnen Typen können nicht vermischt werden. Zu den Basistypen können eigene fachlich definierte Typen erzeugt werden.
+
+Dies ist eine erste einfache Einführung zu den Typen. In den kommenden Kapiteln werden wir immer wieder auf die Typen zurück kommen und weitere Definitionen kennen lernen.
+
+

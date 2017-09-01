@@ -7,8 +7,28 @@ Andreas Schröpfer
 * Methoden
 
 - Methoden sind Funktionen zu einem bestimmten Typ
-- es können bliebig viele Methoden hinzugefügt werden
+- Methoden werden ähnlich wie Funktionen im Code deklariert
 
-* Methoden String()
+
+* Methoden Deklaration
 
 .play slide/celsius/main.go
+
+* Methode String()
+
+- wird vom fmt Package verwendet um Typen als String in der Ausgabe anzuzeigen
+- wird einem Typen die Methode String() hinzugefügt so wird diese verwendet
+- Typen ohne String() Methode werden anhand des Basistypen gerendert
+
+* Methode String()
+
+.play slide/user/main.go
+
+* Idiomatic Go 
+
+- In Go wird nicht this oder self verwendet
+- Einfache Abkürzungen machen den Code lesbarer
+
+ func (u User) Methode(){}
+ func (s Sensor) Methode(){}
+ func (b Botty) Methode(){}

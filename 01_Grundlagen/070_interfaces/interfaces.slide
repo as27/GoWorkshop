@@ -6,4 +6,29 @@ Andreas Schröpfer
 
 * Interfaces
 
-Interfaces beschreiben Eigenschaften eines Typs
+
+Die Schnittstelle oder das Interface ist der Teil eines Systems, welches der Kommunikation dient.
+
+.link https://de.wikipedia.org/wiki/Schnittstelle Wikipedia
+
+In Go beschreibt ein Interface die Eigenschaften, welche ein Typ besitzen muss.
+
+* Sprechweise
+
+Typ User implementiert das Stringer Interface
+
+Type user implements the stringer interface
+
+* Definition
+
+- In Go sind die Interfaces möglichst klein zu halten. 
+- Bei nur einer Methode wird dem Methodenname ein _er_ angehängt.
+- Bei der Deklaration müssen die Typen angegeben werden. Dies definiert das Layout im Arbeitsspeicher
+
+  // Stringer returns a string representation of the type 
+  type Stringer interface {
+  	String() string
+  }
+
+- jeder Typ, welcher nun diese Methode besitzt implementiert automatisch dieses Interface
+- im Code muss nicht explizit angegeben werden, dass ein Interface implementiert wird

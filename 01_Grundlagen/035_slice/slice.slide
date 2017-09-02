@@ -1,0 +1,61 @@
+slice und map
+01 Grundlagen
+
+Andreas Schröpfer
+@lyckade
+
+* Slice 
+
+- Ein slice ist eine Liste von Variablen
+- Ein slice hat eine Reihenfolge
+- Ein slice hat keine feste Länge. D.h. es kann laufend weitere Elemente aufnehmen
+
+* Deklaration
+
+  var mySliceOfInt []int 
+  var mySliceOfString []string 
+
+  type Group struct {
+      Users []User
+  }
+
+  // Zuweisen von Werten
+  mySliceOfInt = []int{1, 2, 3}
+
+* Anhängen von Werten
+
+Über die Funktion *append()* werden Werte dem Slice hinzugefügt
+
+  a := []int{}
+  a = append(a, 1) // []int{1}
+  a = append(a, 2) // []int{1, 2}
+  a = append(a, 3) // []int{1, 2, 3}
+
+* Auslesen über den Index
+
+- Es können einzelne Elemente über den Index angesprochen werden
+- Es können auch Teile des Slices selektiert werden
+
+.play slide/index/main.go /START OMIT/,/END OMIT/
+
+* Bestimmen der Größe
+
+Über die Funktion *len()* kann die Größe des Slice bestimmt werden.
+
+  a := []int{1, 2, 3}
+  fmt.Println(len(a)) // 3
+
+* map 
+
+- map ist ähnlich wie ein slice
+- die einzelnen Einträge werden über Schlüssel gefunden
+- die Elemente einer map besitzen keine feste Reihenfolge
+
+* make a map
+
+- *bevor* eine map verwendet werden kann, muss diese mit *make()* erzeugt werden.
+
+  a := make(map[string]int)  
+  a["eins"] = 1
+  a["zwei"] = 2
+  fmt.Println(a["zwei"]) // 2

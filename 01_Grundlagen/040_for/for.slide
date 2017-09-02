@@ -1,0 +1,37 @@
+for loops
+01 Grundlagen
+
+Andreas Schröpfer
+@lyckade
+
+* Loops
+
+- Loops in Go werden einheitlich über for abgebildet
+- es gibt drei unterschiedliche Formen des for loops
+
+  // wie in C 
+  for init; condition; post {}
+
+  // wie ein while loop
+  for condition {}
+
+  // undendliche Schleife
+  for {}
+
+* Beispiel - wie in C 
+.play slide/for1/main.go /START OMIT/,/END OMIT/
+
+* Beispiel - wie ein while loop
+.play slide/for2/main.go /START OMIT/,/END OMIT/
+
+* Beispiel - unendliche schleife
+
+- *break* beendet dabei die Schleife
+
+.play slide/for3/main.go /START OMIT/,/END OMIT/
+
+* Loop über slice
+
+- Hierfür würd die _Funktion_ range benutzt
+
+.play slide/slice/main.go /START OMIT/,/END OMIT/

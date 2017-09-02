@@ -9,11 +9,13 @@ Einfach dieses Repository herunterladen. Innerhalb der einzelnen Kapitel gibt es
 
 # Folien
 
-* [030 struct](http://talks.godoc.org/github.com/as27/GoWorkshop/01_Grundlagen/030_struct/struct.slide)
-* [040 func](http://talks.godoc.org/github.com/as27/GoWorkshop/01_Grundlagen/040_func/func.slide)
-* [050 methoden](http://talks.godoc.org/github.com/as27/GoWorkshop/01_Grundlagen/050_methoden/methoden.slide)
-* [060 pointer](http://talks.godoc.org/github.com/as27/GoWorkshop/01_Grundlagen/060_pointer/pointer.slide)
-* [070 interfaces](http://talks.godoc.org/github.com/as27/GoWorkshop/01_Grundlagen/070_interfaces/interfaces.slide)
+* Grundlagen
+    * [010 tooling](http://talks.godoc.org/github.com/as27/GoWorkshop/01_Grundlagen/010_GoTooling/tooling.slide)
+    * [030 struct](http://talks.godoc.org/github.com/as27/GoWorkshop/01_Grundlagen/030_struct/struct.slide)
+    * [040 func](http://talks.godoc.org/github.com/as27/GoWorkshop/01_Grundlagen/040_func/func.slide)
+    * [050 methoden](http://talks.godoc.org/github.com/as27/GoWorkshop/01_Grundlagen/050_methoden/methoden.slide)
+    * [060 pointer](http://talks.godoc.org/github.com/as27/GoWorkshop/01_Grundlagen/060_pointer/pointer.slide)
+    * [070 interfaces](http://talks.godoc.org/github.com/as27/GoWorkshop/01_Grundlagen/070_interfaces/interfaces.slide)
 
 # Go Version
 

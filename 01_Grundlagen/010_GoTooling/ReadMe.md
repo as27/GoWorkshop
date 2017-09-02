@@ -37,3 +37,7 @@ Diese Tools sind auch im VS Code eingebunden. Jedes mal beim Speichern einer Dat
 # govet
 
 Für idiomatischen Go Code gibt es noch weitere Empfehlungen. Diese können mit `go vet` aufgerufen werden. VS Code führt auch diesen Befehl nach jedem Speichern aus und markiert die Zeilen, welche Anmerkungen hierzu besitzen.
+
+# go run
+
+Mit dem Befehl `go run datei.go` kann ein Go Programm direkt ausgeführt werden. 

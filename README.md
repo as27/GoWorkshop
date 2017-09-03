@@ -18,6 +18,8 @@ Einfach dieses Repository herunterladen. Innerhalb der einzelnen Kapitel gibt es
     * [060 methoden](http://talks.godoc.org/github.com/as27/GoWorkshop/01_Grundlagen/060_methoden/methoden.slide)
     * [070 interfaces](http://talks.godoc.org/github.com/as27/GoWorkshop/01_Grundlagen/070_interfaces/interfaces.slide)
     * [080 pointer](http://talks.godoc.org/github.com/as27/GoWorkshop/01_Grundlagen/080_pointer/pointer.slide)
+    * [090 pointer](http://talks.godoc.org/github.com/as27/GoWorkshop/01_Grundlagen/090_packages/packages.slide)
+    
 
 # Go Version
 

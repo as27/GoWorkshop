@@ -32,3 +32,20 @@ Type user implements the stringer interface
 
 - jeder Typ, welcher nun diese Methode besitzt implementiert automatisch dieses Interface
 - im Code muss nicht explizit angegeben werden, dass ein Interface implementiert wird
+
+* Interfaces als Input
+
+Funktionen sollen wenn möglich Interfaces als Eingangswerte verwenden. Dadurch ist es möglich unterschiedliche Typen für diese Funktion zu verwenden.
+
+  
+* Beispiel Definition Interface
+
+.code slide/geo/main.go /START1 OMIT/,/END1 OMIT/  
+
+* Beispiel Implementierung Rechteck
+
+.code slide/geo/main.go /START2 OMIT/,/END2 OMIT/  
+
+* Beispiel Implementierung Dreieck
+
+.play slide/geo/main.go /START3 OMIT/,/END3 OMIT/ 

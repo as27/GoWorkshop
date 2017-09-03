@@ -6,9 +6,9 @@ Andreas Schröpfer
 
 * Slice 
 
-- Ein slice ist eine Liste von Variablen
-- Ein slice hat eine Reihenfolge
-- Ein slice hat keine feste Länge. D.h. es kann laufend weitere Elemente aufnehmen
+- Ein slice ist eine Liste von einem bestimmten Typ.
+- Ein slice hat eine Reihenfolge.
+- Ein slice hat keine feste Länge. D.h. es kann laufend weitere Elemente.
 
 * Deklaration
 
@@ -45,6 +45,12 @@ Andreas Schröpfer
   a := []int{1, 2, 3}
   fmt.Println(len(a)) // 3
 
+* slice als Typ
+
+- ein slice kann auch für die Definition eines Typen verwendet werden
+
+  type Group []User
+
 * map 
 
 - map ist ähnlich wie ein slice
@@ -59,3 +65,12 @@ Andreas Schröpfer
   a["eins"] = 1
   a["zwei"] = 2
   fmt.Println(a["zwei"]) // 2
+
+* map als Typ
+
+- map kann auch für die Definition eines Typen verwendet werden
+- hier ist es wichtig, dass neue Variablen mit make() initialisiert werden.
+
+.play slide/maptype1/main.go /START OMIT/,/END OMIT/
+
+.play slide/maptype2/main.go /START OMIT/,/END OMIT/

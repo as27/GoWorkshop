@@ -49,3 +49,14 @@ Funktionen sollen wenn möglich Interfaces als Eingangswerte verwenden. Dadurch 
 * Beispiel Implementierung Dreieck
 
 .play slide/geo/main.go /START3 OMIT/,/END3 OMIT/ 
+
+* Abstraktion
+
+- Interfaces eignen sich gut Funktionen zu abstrahieren (Single Responsibility Principle)
+- Interfaces ermöglichen Tests der Funktion ohne die Implementierung zu benötigen.
+
+* io.Reader und io.Writer
+
+- eine der wichtigsten Interfaces in Go
+- abstrahieren alle Lese- und Schreibvorgänge
+- Anwendung: Files, Netzwerk, HTTP Server, Bilder, ...

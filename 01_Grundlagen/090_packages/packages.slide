@@ -48,3 +48,13 @@ Installation externer Packete erfolgt über go get:
     }
     
     func NewUser() *User{...}
+
+* Dokumentation
+
+- Dokumentation erfolgt direkt im Code
+- godoc ist das dazugehörige Tool
+- govet prüft auch Dokumentation (alle exported Elemente benötigen Dokumentation)
+
+Godoc lokal auf Port 8080 ausführen:
+
+  godoc -http :8080

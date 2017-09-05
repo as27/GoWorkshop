@@ -46,3 +46,19 @@ Der Typ legt fest, wie eine Variable im Arbeitsspeicher abgebildet wird. Über d
 * Beispiel
 
 .play slide/var/main.go /START OMIT/,/END OMIT/
+
+* Eigener Typ
+
+- Go unterscheidet zwischen Methoden für Pointer und für nicht Pointer
+
+  func (u User) SetName(name string){}
+  func (u *User) SetName(name string){}
+
+Häufiger Fehler z.B. bei bytes.Buffer der io.Reader und io.Writer ist nur für den Pointer implementiert.
+
+  func (b *Buffer) Read(p []byte) (n int, err error)
+
+Beispiel bytes.Buffer
+
+  b := bytes.Buffer{}  // kann zu Fehlern führen
+  b := &bytes.Buffer{} // richtig als Pointer anlegen

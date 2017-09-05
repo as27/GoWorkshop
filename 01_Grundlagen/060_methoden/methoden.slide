@@ -32,3 +32,11 @@ Andreas Schröpfer
  func (u User) Methode(){}
  func (s Sensor) Methode(){}
  func (b Botty) Methode(){}
+
+* Pointer
+
+Pointer wurden bis hier noch nicht behandelt. Wenn eine Methode einen Datenbestand eines Types ändern können soll, dann muss diese ein Pointer sein. 
+
+Hierfür wird dem Typ ein * voran getellt:
+
+   func (us *Users) Add(u User){...}

@@ -57,7 +57,7 @@ Installation externer Packete erfolgt über go get:
 * exported 
 
 - alle exported Elemente können von anderen Packeten verwendet werden
-- diese Stellen die Schnittstelle des Packets dar
+- diese sind die Schnittstelle des Packets
 - nur wirklich notwendige Elemente sollten exported sein
 
 * Dokumentation

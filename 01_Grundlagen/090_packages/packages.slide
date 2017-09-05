@@ -49,6 +49,17 @@ Installation externer Packete erfolgt über go get:
     
     func NewUser() *User{...}
 
+* unexported
+
+- alle unexported Variablen, Funktionen, Typen, ... sind nur innerhalb des Packetes zu verwenden.
+- werden klein geschrieben
+
+* exported 
+
+- alle exported Elemente können von anderen Packeten verwendet werden
+- diese Stellen die Schnittstelle des Packets dar
+- nur wirklich notwendige Elemente sollten exported sein
+
 * Dokumentation
 
 - Dokumentation erfolgt direkt im Code

@@ -35,6 +35,7 @@ Because these interfaces and primitives wrap lower-level operations with various
 - Datei
 - Webserver
 - Buffer
+- STDIN
 - ...
 
 Alle Typen, welche den io.Reader implementieren können verwendet werden.
@@ -45,6 +46,7 @@ Alle Typen, welche den io.Reader implementieren können verwendet werden.
 - Datei
 - Webserver
 - Buffer
+- STDOUT
 - ...
 
 * Beispiel
@@ -54,3 +56,9 @@ Alle Typen, welche den io.Reader implementieren können verwendet werden.
 * Beispiel fromFile
 
 .play slide/split/main.go /START OMIT/,/END2 OMIT/
+
+* Beispiel STDOUT
+
+.play slide/stdout/main.go /START OMIT/,/END OMIT/
+
+Anstatt STDOUT kann jeder andere io.Writer verwendet werden. 

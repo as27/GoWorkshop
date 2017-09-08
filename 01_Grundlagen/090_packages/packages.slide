@@ -65,7 +65,25 @@ Installation externer Packete erfolgt über go get:
 - Dokumentation erfolgt direkt im Code
 - godoc ist das dazugehörige Tool
 - govet prüft auch Dokumentation (alle exported Elemente benötigen Dokumentation)
+- Erstes Wort der Dokumentation muss der Variablen- oder Funktions- oder Typname sein.
+- Dokumentation ist klassischerweise in Englisch
 
 Godoc lokal auf Port 8080 ausführen:
 
   godoc -http :8080
+
+* Dokumentation
+  // MyVar is used for setting the ... parameter. If it is 1 it is super great
+  // You can set 99 for getting everything in debug modus
+  var MyVar = 1
+
+  // MyType defines the ... it can be used for ...
+  type MyType struct {
+    ...
+  }
+
+  // MyFunc takes a string as an input and does ... with it. If therer is ...
+  // then an error is returned
+  func MyFunc(s string) error {
+    ...
+  }

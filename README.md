@@ -19,6 +19,8 @@ Einfach dieses Repository herunterladen. Innerhalb der einzelnen Kapitel gibt es
     * [070 interfaces](http://talks.godoc.org/github.com/as27/GoWorkshop/01_Grundlagen/070_interfaces/interfaces.slide)
     * [080 pointer](http://talks.godoc.org/github.com/as27/GoWorkshop/01_Grundlagen/080_pointer/pointer.slide)
     * [090 pointer](http://talks.godoc.org/github.com/as27/GoWorkshop/01_Grundlagen/090_packages/packages.slide)
+* Standard Library
+    * [210 io](http://talks.godoc.org/github.com/as27/GoWorkshop/02_Standardlib/210_io/io.slide)    
     
 
 # Go Version

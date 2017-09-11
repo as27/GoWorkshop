@@ -1,5 +1,13 @@
 package main
 
+import (
+	"bytes"
+	"encoding/json"
+	"fmt"
+	"io"
+)
+
+// START1 OMIT
 type Sensor struct {
 	ID     int     `json:"id"`
 	Name   string  `json:"name,omitempty"`
@@ -12,13 +20,28 @@ type Value struct {
 	Timestamp int     `json:"timestamp"`
 }
 
+// END1 OMIT
+// START2 OMIT
 func main() {
 	s := Sensor{
 		1,
 		"Sensor1",
 		[]Value{
-			Value{"Temperatur", 24, 201706010800},
-			Value{"Temperatur", 28, 201706011200},
+			Value{"T", 24, 201706010800},
+			Value{"T", 28, 201706011200},
 		},
 	}
+	b, _ := json.Marshal(s)
+	fmt.Println(string(b))
+	w := &bytes.Buffer{}
+	encodeSensor(w, s)
+	fmt.Println(w.String())
 }
+
+func encodeSensor(w io.Writer, s Sensor) error {
+	e := json.NewEncoder(w)
+	e.SetIndent("X", "  ")
+	return e.Encode(s)
+}
+
+// END2 OMIT

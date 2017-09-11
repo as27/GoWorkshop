@@ -13,3 +13,13 @@ Andreas Schröpfer
 
 * Von Go nach JSON
 
+- func Marshal über []byte
+- Encoder über io.Writer
+
+* Definition des Typs
+
+.code slide/sensor/main.go /START1 OMIT/,/END1 OMIT/
+
+* Aufruf im Code
+
+.play slide/sensor/main.go /START2 OMIT/,/END2 OMIT/

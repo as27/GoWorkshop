@@ -8,7 +8,7 @@ Andreas Schröpfer
 
 - Ein slice ist eine Liste von einem bestimmten Typ.
 - Ein slice hat eine Reihenfolge.
-- Ein slice hat keine feste Länge. D.h. es kann laufend weitere Elemente.
+- Ein slice hat keine feste Länge. D.h. es kann laufend weitere Elemente aufnehmen.
 
 * Deklaration
 

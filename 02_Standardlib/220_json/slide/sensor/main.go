@@ -9,7 +9,7 @@ import (
 
 // START1 OMIT
 type Sensor struct {
-	ID     int     `json:"id"`
+	ID     int     `json:"sensor_id"`
 	Name   string  `json:"name,omitempty"`
 	Values []Value `json:"values"`
 }
@@ -40,7 +40,7 @@ func main() {
 
 func encodeSensor(w io.Writer, s Sensor) error {
 	e := json.NewEncoder(w)
-	e.SetIndent("X", "  ")
+	e.SetIndent("", "  ")
 	return e.Encode(s)
 }
 

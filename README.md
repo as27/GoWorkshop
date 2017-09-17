@@ -21,6 +21,7 @@ Einfach dieses Repository herunterladen. Innerhalb der einzelnen Kapitel gibt es
     * [090 pointer](http://talks.godoc.org/github.com/as27/GoWorkshop/01_Grundlagen/090_packages/packages.slide)
 * Standard Library
     * [210 io](http://talks.godoc.org/github.com/as27/GoWorkshop/02_Standardlib/210_io/io.slide)    
+    * [220 json](http://talks.godoc.org/github.com/as27/GoWorkshop/02_Standardlib/220_json/json.slide)    
     
 
 # Go Version

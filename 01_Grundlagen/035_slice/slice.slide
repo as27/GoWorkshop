@@ -74,3 +74,15 @@ Andreas Schröpfer
 .play slide/maptype1/main.go /START OMIT/,/END OMIT/
 
 .play slide/maptype2/main.go /START OMIT/,/END OMIT/
+
+* delete() Eintrag entfernen
+
+Mit der Funktion delete() kann ein Eintrag gelöscht werden.
+
+  var Numbers = map[int]string{
+    1: "eins",
+    2: "zwei",
+    3: "drei",
+    4: "vier",
+  }
+  delete(Numbers, 4)

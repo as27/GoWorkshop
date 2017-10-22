@@ -26,5 +26,8 @@ func Split(r io.Reader, size int) (Chunks, error) {
 func Merge(c Chunks, w io.Writer) error {
 	// Bevor du den Code für Merge schreibst, solltest Du einen
 	// Test erstellen.
+	// Um die Daten, welche in den io.Writer geschrieben werden
+	// auszuwerten bietet sich der Typ bytes.Buffer an, da dieser
+	// auch einen io.Writer implementiert.
 	return nil
 }

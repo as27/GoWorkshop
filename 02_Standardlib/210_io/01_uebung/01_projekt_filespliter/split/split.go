@@ -24,5 +24,7 @@ func Split(r io.Reader, size int) (Chunks, error) {
 // neben Chunks auch einen io.Writer. Dieser wird verwendet, um die
 // in die einzelnen Bytes zu schreiben.
 func Merge(c Chunks, w io.Writer) error {
+	// Bevor du den Code für Merge schreibst, solltest Du einen
+	// Test erstellen.
 	return nil
 }

@@ -2,6 +2,7 @@ package split
 
 import (
 	"bytes"
+	"fmt"
 	"io"
 	"reflect"
 	"testing"
@@ -56,4 +57,15 @@ func TestSplit(t *testing.T) {
 			}
 		})
 	}
+}
+
+func ExampleMerge() {
+	c := Chunks{
+		Chunk{1, 2, 3},
+		Chunk{4, 5},
+	}
+	b := &bytes.Buffer{}
+	Merge(c, b)
+	fmt.Printf("%v", b.Bytes())
+	// Output: [1 2 3 4 5]
 }

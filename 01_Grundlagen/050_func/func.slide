@@ -30,4 +30,17 @@ Andreas Schröpfer
 
 - der zweite Output beinhaltet meist Fehler oder Erfolgsmeldungen
 - kann aber auch jeder andere beliebige Wert sein
-- mit _ können Werte ausgelassen werden
+- Auf Empfängerseite kann mit _ Werte ausgelassen werden
+
+* Fehlerbehandlung
+
+- Funktionen sollten Fehler durchreichen
+
+    func myFunc() error {
+        // Funktionsaufruf mit möglichen Fehler
+        b, err := ioutil.ReadFile("conf.json")
+        if err != nil {
+            return err
+        }
+        ...
+    }

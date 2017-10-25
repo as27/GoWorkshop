@@ -44,3 +44,49 @@ Andreas Schröpfer
         }
         ...
     }
+
+* Variadische Funktionen
+
+- sind Funktionen, welche beliebig viele Inputwerte verarbeiten kann.
+
+    // Beispiel ist fmt.Println()
+    fmt.Println("Eins", "Zwei", "Drei", "...")
+
+- Definition erfolgt über "..." for dem Typ
+- Inerhalb der Funktion ist dies ein slice des Typs
+
+    func sum(vals ...int) int {
+        total := 0
+        for _, val := range vals {
+            total += val
+        }
+        return total
+    }
+
+* Variadische Funktionen 2
+
+- Aufruf einer variadischen Funktion mit einem Slice eines Typs
+- "..." wird der Variablen angehängt 
+
+    a := []int{1, 2, 3}
+    sum(a...)
+
+* Beispiel sum()
+
+.play slide/sum/main.go
+
+* Anonyme Funktionen
+
+- Benannte Funktionen können nur auf oberster Ebene des Packets definiert werden.
+- innerhalb einer Funktion können anonyme Funktionen definiert werden.
+- Funktionen stellen dabei auch Datentypen dar (first class citizens)
+- Anwendung bei Erstellung von Go Routinen
+- Anwendung für funktionale Programmierung
+
+* Anwendung Go Routinen
+
+.play slide/goroutines/main.go
+
+* Anwendung funktionale Programmierung addN
+
+.play slide/addN/main.go

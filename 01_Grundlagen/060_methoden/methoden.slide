@@ -9,6 +9,9 @@ Andreas Schröpfer
 - Methoden sind Funktionen zu einem bestimmten Typ
 - Methoden werden ähnlich wie Funktionen im Code deklariert
 
+* Methoden Deklaration
+
+.play slide/punkt/main.go
 
 * Methoden Deklaration
 
@@ -40,3 +43,7 @@ Pointer wurden bis hier noch nicht behandelt. Wenn eine Methode einen Datenbesta
 Hierfür wird dem Typ ein * voran getellt:
 
    func (us *Users) Add(u User){...}
+
+* Beispiel   
+
+.play slide/db/main.go /START OMIT/,/END OMIT/

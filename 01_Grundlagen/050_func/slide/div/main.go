@@ -13,8 +13,8 @@ func div(a, b float32) (float32, bool) {
 
 func main() {
 	d, ok := div(10, 0)
-	if ok == true {
-		fmt.Println("d: ", d)
+	if !ok {
+		fmt.Println("Division nicht erlaubt!", "d: ", d)
 	}
 	e, _ := div(10, 2)
 	fmt.Println("e: ", e)

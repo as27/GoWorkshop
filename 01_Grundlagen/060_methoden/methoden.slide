@@ -38,7 +38,11 @@ Andreas Schröpfer
 
 * Pointer
 
-Pointer wurden bis hier noch nicht behandelt. Wenn eine Methode einen Datenbestand eines Types ändern können soll, dann muss diese ein Pointer sein. 
+Pointer wurden bis hier noch nicht behandelt. Dies sind Zeiger auf einen Platz im Arbeitsspeicher. D.h. es wird nicht die Variable kopiert, sondern nur auf den Platz im Arbeitsspeicher verwiesen. In folgenden Fällen wird dies verwendet:
+
+- wenn innerhalb des Types durch die Methode Daten verändert werden.
+- wenn die Variable sehr groß ist.
+
 
 Hierfür wird dem Typ ein * voran getellt:
 

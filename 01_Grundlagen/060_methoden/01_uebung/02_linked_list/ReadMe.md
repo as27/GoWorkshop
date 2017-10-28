@@ -1,6 +1,6 @@
 # Linked List
 
-Wir implementieren eine [Linked List](https://de.wikipedia.org/wiki/Liste_(Datenstruktur)) in Go. Die Liste soll eine definierte API besitzen.
+Wir implementieren eine einfache [Linked List](https://de.wikipedia.org/wiki/Liste_(Datenstruktur)) in Go. Die Liste kann dabei string Elemente aufnehmen.
 
 Loop durch die Liste soll wie folgt möglich sein:
 
@@ -13,19 +13,24 @@ Loop durch die Liste soll wie folgt möglich sein:
 
 Es gibt dabei folgende Datentypen:
 
-* Data (struct, welches die Daten beinhaltet)
 * Element
+    * Value
     * next, prev = Pointer zu den jeweiligen Elementen
-    * Next()*Element
-    * Prev()*Element
+    
 * Liste
     * currentNode
     * head
 
+Element soll folgende Methoden implementieren:
+
+* Next()*Element
+* Prev()*Element
+
 Die Liste sollte folgende Methoden implementieren:
 
 * Front()*Element
-* AddAt(int,Data)
-* PushFront(Data)
-* PushBack(Data)
-* Range
+* Len()int
+* AddAt(int,string)
+* Get(int)*Element
+* PushFront(string): Element am Anfang einfügen
+* PushBack(string) : Element am Ende einfügen

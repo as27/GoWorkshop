@@ -30,6 +30,22 @@ Möchte man alle Tests eines Projektes ausführen so verwendet man.
 
   go test ./...
 
+* go benchmark  
+
+- Definition innerhalb des Test files
+
+  func BenchmarkFunction(b *testing.B) {
+    for i := 0; i < b.N; i++ {
+      myFunc()
+    }
+  }
+
+- Aufruf mit -bench
+
+  go test -bench .
+
+  BenchmarkSplit-4         2000000               690 ns/op
+  PASS
 
 * Test in Visual Studio Code
 
@@ -61,13 +77,3 @@ Ein Go Programm kann auch direkt ausgeführt werden.
 
   go run main.go
 
-* go test
-
-- 
-
-  go test ./... // 
-  go test 
-
-* go benchmark  
-
-- 

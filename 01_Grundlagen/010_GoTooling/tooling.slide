@@ -60,3 +60,14 @@ aufgerufen werden. VS Code führt auch diesen Befehl nach jedem Speichern aus un
 Ein Go Programm kann auch direkt ausgeführt werden.
 
   go run main.go
+
+* go test
+
+- 
+
+  go test ./... // 
+  go test 
+
+* go benchmark  
+
+- 

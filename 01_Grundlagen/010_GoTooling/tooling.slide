@@ -47,6 +47,10 @@ Möchte man alle Tests eines Projektes ausführen so verwendet man.
   BenchmarkSplit-4         2000000               690 ns/op
   PASS
 
+- 4 Processes (GOMAXPROCS)
+- 2.000.000 Aufrufe im Benchmark (b.N)
+- 690 nanosekunden pro Operation
+
 * Test in Visual Studio Code
 
 VS Code unterstützt die Tests in Go. Sobald die Go Erweiterung installiert ist, erkennt VS Code automatisch die Testdateien und die dazugehörigen Tests. Oberhalb der Funktionen werden kleine Links eingeblendet über welche die einzelnen Tests direkt aus VS Code aus gestartet werden können.   

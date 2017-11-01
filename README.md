@@ -11,6 +11,7 @@ Einfach dieses Repository herunterladen. Innerhalb der einzelnen Kapitel gibt es
 
 * Grundlagen
     * [010 tooling](http://talks.godoc.org/github.com/as27/GoWorkshop/01_Grundlagen/010_GoTooling/tooling.slide)
+    * [022 if](http://talks.godoc.org/github.com/as27/GoWorkshop/01_Grundlagen/022_if/if.slide)
     * [030 struct](http://talks.godoc.org/github.com/as27/GoWorkshop/01_Grundlagen/030_struct/struct.slide)
     * [035 slice](http://talks.godoc.org/github.com/as27/GoWorkshop/01_Grundlagen/035_slice/slice.slide)
     * [080 pointer](http://talks.godoc.org/github.com/as27/GoWorkshop/01_Grundlagen/080_pointer/pointer.slide)

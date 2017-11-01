@@ -43,6 +43,13 @@ Andreas Schröpfer
 
 .play slide/div/main.go
 
+* defer 
+
+- defer wird Aufgerufen, wenn eine Funktion beendet wird
+- wird zum Aufräumen verwendet
+- nicht immer sinnvoll
+
+.play slide/defer/main.go
 
 * Fehlerbehandlung
 

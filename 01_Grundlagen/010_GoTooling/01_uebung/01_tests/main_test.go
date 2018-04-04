@@ -9,3 +9,9 @@ func TestGetHelloString(t *testing.T) {
 		t.Errorf("\nExpect: %s \nGot: %s", expect, got)
 	}
 }
+
+func Benchmark(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+
+	}
+}

@@ -17,7 +17,7 @@ func TestList(t *testing.T) {
 			t.Error("no error expected", err)
 		}
 		if got.Value != v {
-			t.Errorf("at idnex %d exp: %s got %s", i, v, got.Value)
+			t.Errorf("at index %d exp: %s got %s", i, v, got.Value)
 		}
 	}
 }
